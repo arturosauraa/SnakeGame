@@ -215,6 +215,7 @@ int main()
         DrawRectangleLinesEx(Rectangle{(float)offset - 5, (float)offset - 5, (float)cellSize*cellCount + 10, (float)cellSize*cellCount + 10 }, 5, darkGreen);
         game.Draw();
         DrawText("Snake Game", offset - 5, 20, 40, darkGreen);
+        DrawText("Food : ", offset+cellSize*cellCount - 160, 20, 40, darkGreen );
         DrawText(TextFormat("%i", game.score), offset+cellSize*cellCount - 20, 20, 40, darkGreen);
 
         EndDrawing();
